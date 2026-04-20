@@ -1,0 +1,19 @@
+h1 {
+    font-size: 25px; /*tamanho da fonte*/
+    font-weight: bold; /*estilo de fonte-negrito*/
+    font-family: verdana; /*tipo de fonte*/
+    background-color: yellow; /*cor de fundo do texto*/
+    color: darkgreen; /*cor do texto*/
+    letter-spacing: 4px; /*espaçamanto entre letras*/
+    border-bottom: 2px solid red; /*borda inferior*/
+}
+
+p {
+    font-size: 18px; /*tamanho da fonte*/
+    font-style: italic; /*estilo do texto-itálico*/
+    font-family: tahoma; /*tipo de fonte*/
+    background-color: lightgray; /*cor de fundo de texto*/
+    color: green; /*cor de texto*/
+    line-height: 2em; /*espaçamento entre linhas-duplo*/
+    text-align: center; /*alinhamento do  texto*/
+}
