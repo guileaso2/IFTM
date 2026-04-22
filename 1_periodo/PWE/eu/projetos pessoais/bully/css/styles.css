@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+	  margin:0px;
+}
+
+@font-face {
+    font-family: 'akira';
+    /* O ../ serve para sair da pasta 'css' e entrar na pasta 'fontes' */
+    src: url('../fontes/Akira Expanded Demo.otf'); 
+
+}
+
+header {
+    background-color: black;        /* Fundo preto */
+    color: white;                   /* Cor do texto branca para dar contraste */
+    display: flex;                    /* Ativa o modo flexbox */
+    justify-content: space-between;   /* Empurra um item para cada ponta */
+    align-items: center;              /* Alinha verticalmente no centro */
+    padding: 10px 20px;               /* Espaçamento interno para o texto não colar nas bordas */
+}
+
+header h1 {
+    font-family: 'akira', 'sans-serif';
+}
+
+body {
+    background-color: #0f0f0f;      /* Fundo geral */
+}
+
+.texto h2 {
+    font-family: 'akira';
+    font-size: x-large;
+}
+
+.texto p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;                  
+    line-height: 1.6;               
+}
+
+.conteudo {
+    display: flex;
+    align-items: flex-start;        /* Alinha o texto pelo topo da imagem */
+    background-color: #121212;;
+    color: whitesmoke;
+    
+    padding: 0;
+    gap: 0;                         /* Cria um espaço entre a imagem e o texto */
+}
+
+.conteudo img {
+    width: 55%;                     /* A imagem ocupa 65% da largura da tela */
+    max-width: 1200px;              /* Mas não passa de 1000px para não ficar gigante */
+    height: auto;                   /* Mantém a proporção */
+    object-fit: cover;
+    display: block;                 /* Remove espaços fantasmas abaixo da imagem */
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    width: 45%;                     /* Garante que o texto ocupe a outra metade */
+    padding: 60px;
+}
+
+.tracklist-container {
+    display: flex;                  /* Ativa o flexbox */
+    background-color: #1a1a1a;    /* Cor de fundo da seção */
+    flex-direction: row-reverse;    /* Inverte a ordem dos itens: o primeiro no HTML vai para a direita */
+    justify-content:center;         /* Centraliza o conjunto (imagem + lista) */
+    align-items: center;            /* Alinha verticalmente no meio */
+    gap: 100px;                     /* Espaço ENTRE imagem e tracklist */
+    padding: 80px 50px;             /* Espaçamento interno */     
+}
+
+.tracklist-container img {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);         /* leve destaque */
+}
+
+
+.tracklist-info {
+    max-width: 500px;               /* Limita a largura do bloco da tracklist */      
+    display: flex;    
+    flex-direction: column;
+    align-items: flex-start;        /* Alinha tudo à esquerda */
+}
+
+.tracklist-info h3 {
+    color: whitesmoke;
+    font-family: 'akira';
+    font-size: xx-large;
+    text-align: left;               /* Garante que o título fique alinhado à esquerda */
+}
+
+.tracklist {
+    color: whitesmoke;
+    font-family: 'Roboto Mono', monospace; /* Fonte estilizada */
+    list-style-position: outside;   /* Números ficam alinhados à esquerda */
+    padding-left: 20px;             /* Cria espaço para os números */
+    width: 100%;                    /* Ocupa toda a largura do bloco */
+}
+
+.tracklist li a {
+    text-decoration: none;          /* Remove o sublinhado azul */
+    color: whitesmoke;            /* Define a cor que você quer */
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+}
