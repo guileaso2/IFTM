@@ -11,8 +11,8 @@
 }
 
 header {
-    background-color: black;         /* Fundo preto */
-    color: white;                    /* Cor do texto branca para dar contraste */
+    background-color: black;          /* Fundo preto */
+    color: white;                     /* Cor do texto branca para dar contraste */
     display: flex;                    /* Ativa o modo flexbox */
     justify-content: space-between;   /* Empurra um item para cada ponta */
     align-items: center;              /* Alinha verticalmente no centro */
@@ -50,7 +50,7 @@ body {
 
 .conteudo img {
     width: 55%;                     /* A imagem ocupa 65% da largura da tela */
-    max-width: 1200px;              /* Mas não passa de 1000px para não ficar gigante */
+    max-width: 1200px;              /* Mas não passa de 1200px para não ficar gigante */
     height: auto;                   /* Mantém a proporção */
     object-fit: cover;
     display: block;                 /* Remove espaços fantasmas abaixo da imagem */
