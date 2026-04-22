@@ -11,8 +11,8 @@
 }
 
 header {
-    background-color: black;        /* Fundo preto */
-    color: white;                   /* Cor do texto branca para dar contraste */
+    background-color: black;         /* Fundo preto */
+    color: white;                    /* Cor do texto branca para dar contraste */
     display: flex;                    /* Ativa o modo flexbox */
     justify-content: space-between;   /* Empurra um item para cada ponta */
     align-items: center;              /* Alinha verticalmente no centro */
@@ -65,7 +65,7 @@ body {
 
 .tracklist-container {
     display: flex;                  /* Ativa o flexbox */
-    background-color: #1a1a1a;    /* Cor de fundo da seção */
+    background-color: #1a1a1a;      /* Cor de fundo da seção */
     flex-direction: row-reverse;    /* Inverte a ordem dos itens: o primeiro no HTML vai para a direita */
     justify-content:center;         /* Centraliza o conjunto (imagem + lista) */
     align-items: center;            /* Alinha verticalmente no meio */
@@ -105,7 +105,7 @@ body {
 
 .tracklist li a {
     text-decoration: none;          /* Remove o sublinhado azul */
-    color: whitesmoke;            /* Define a cor que você quer */
+    color: whitesmoke;            
     font-size: 18px;
     font-family: 'Roboto Mono', monospace;
     text-align: left;
