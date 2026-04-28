@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Seleciona links em seu estado normal (:link) e links já acessados pelo usuário (:visited) */
+a:link, a:visited {
+    color: whitesmoke; /*define a cor do texto*/
+    text-decoration: none; /*retira o sublinhado*/
+    padding: 10px 20px; /*espaçamento interno de cada item do menu*/
+    display: inline-block; /*aceita a definição de largura, altura, margens e paddings*/
+}
+
+/* Estado visual acionado quando o usuário passa o cursor do mouse sobre o link */
+a:hover {
+    color: #121212; /*altera a cor do texto para criar contraste*/
+    background-color: pink; /*adiciona uma cor de fundo ao passar o mouse*/
+}
+
+/* Estado visual acionado no exato momento do clique (pressionar do botão do mouse) */
+a:active {
+    color: black; /*cor do link assim que clicar com o mouse*/
+}
+
+ul {
+    background-color:#121212;
+    display: flex; /*define a <ul> como container*/
+    flex-direction: row; /*organiza os itens (<li>) do menu na horizontal*/
+    justify-content: center; /*centraliza o container*/
+    padding: 0; /*remove o espaçamento da <ul>*/
+
+}
+
+ul li {
+    list-style: none; /*remove os bullets*/
+    border-top: 2px solid #121212;
+    border-bottom: 2px solid #121212;
+}
+
+ul li:hover {
+    border-bottom: 2px solid #121212;
+}
