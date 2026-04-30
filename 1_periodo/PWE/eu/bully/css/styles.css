@@ -110,3 +110,56 @@ body {
     font-family: 'Roboto Mono', monospace;
     text-align: left;
 }
+
+.featured-artists {
+    background-color: #121212;    
+    color: whitesmoke;            
+    padding: 80px 60px;             /* Espaçamento interno: 40px em cima/baixo, 20px nas laterais */
+}
+
+.featured-artists h2 {
+    font-family: 'akira';
+    margin-bottom: 40px;            /* Afasta o título da galeria de fotos */
+}
+
+.artist-grid {
+    display: grid;                  /* Ativa o modo de malha (Grid) */
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de tamanho igual (1 fração cada) */
+    gap: 15px;                     /* Espaçamento entre as fotos (buracos da grade) */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.artist-card {
+    position: relative;             /* Transforma o card em uma "âncora" para o texto que virá por cima */
+    aspect-ratio: 1 / 1;            /* Força o card a ser um quadrado perfeito, independente do conteúdo */
+    background-color: #1a1a1a;    
+}
+
+.artist-card img {
+    width: 100%;                    /* Faz a imagem ocupar toda a largura do card */
+    height: 100%;                   /* Faz a imagem ocupar toda a altura do card */
+    object-fit: cover;
+}
+
+.artist-info {
+    position: absolute;             /* Tira o texto do fluxo normal e permite colocá-lo "flutuando" sobre a foto */
+    bottom: 0;                      /* Cola o texto na parte de baixo do card */        
+    left: 0;                        /* Alinha o texto à esquerda */                 
+    width: 100%;                    /* Faz o container do texto atravessar o card todo */
+    padding: 20px 15px;             /* Espaço interno para o texto não encostar nas bordas */
+    box-sizing: border-box;         /* Garante que o padding não aumente o tamanho total do card */
+}
+
+.artist-info h3 {
+    margin: 0;                     /* Remove margens padrão do navegador que poderiam quebrar o layout */
+    font-size: 1.4rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;              /* Deixa o peso da fonte bem grosso/negrito */
+}
+
+.artist-info p {
+    margin: 5px 0 0;               /* Pequeno espaço apenas no topo para separar do nome */
+    font-size: 0.8rem;             /* Texto menor para a descrição da música */
+    font-family: 'Roboto Mono', monospace;
+}
