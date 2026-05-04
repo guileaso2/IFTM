@@ -1,8 +1,12 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: arial;
+    font-family: "Oswald", sans-serif; 
     font-weight: bold;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
 }
 
 a:link, a:visited {
@@ -116,9 +120,3 @@ ul li {
     border-bottom: 4px solid #4285F4;
 
 }
-
-
-
-
-
-
