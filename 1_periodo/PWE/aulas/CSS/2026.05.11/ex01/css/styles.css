@@ -10,8 +10,8 @@ body {
 
 .box {
     
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     
     background-image: url('../img/whatsapp.png');
     background-repeat: no-repeat;
@@ -23,7 +23,6 @@ body {
     bottom: 20px;
     right: 20px;
 
-    border-radius: 200px;
-
     cursor: pointer;
 }
+   
